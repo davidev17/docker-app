@@ -10,6 +10,12 @@ jobs:
 
     steps: 
       - uses: actions/checkout@v4.2.2
+
+      - name: Autenticação Docker Hub
+        uses: docker/login-action@v3.3.
+        with: 
+          username: ${{secrets.DOCKERHUB_USER}}
+          password: ${{secrets.DOCKERHUB_PWD}} 
       - name: Construção img Docker
         uses: docker/build-push-action@v6.12.0  
         with: 
