@@ -23,5 +23,5 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: | 
-            davidev17/docker-app:v1.1
-            davidev17/docker-app:latest
+            inter171991/app:v1.1
+            inter171991/app:v1.1
