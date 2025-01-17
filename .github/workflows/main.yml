@@ -13,8 +13,8 @@ jobs:
       - name: Construção img Docker
         uses: docker/build-push-action@v6.12.0  
         with: 
-          context: ./docker-app
-          file: ./docker-app/Dockerfile
+          context: .
+          file: ./Dockerfile
           push: true
           tags: | 
             davidev17/docker-app:v1.1
