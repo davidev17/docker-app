@@ -23,5 +23,5 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: | 
-            inter171991/app:v1.1
+            inter171991/app:${{github.run_number}}
             inter171991/app:v1.1
